@@ -80,9 +80,7 @@ small,.mute{color:var(--mute)}
 
 <script>
 var $=function(i){return document.getElementById(i)};
-var U=localStorage.getItem('fk_url'),K=localStorage.getItem('fk_key');
-if(!U||!K){U=prompt('Supabase Project URL');K=prompt('Supabase publishable key');
-  if(U&&K){localStorage.setItem('fk_url',U);localStorage.setItem('fk_key',K)}}
+var U='https://vibqzeccymadvfdcpucb.supabase.co',K='sb_publishable_RdB1KJCK_8j6fhmbJa-TrA_2fDZN1Gq';
 var sb=supabase.createClient(U,K),uid=null,cur=null,hb=null,tk=null,ch=null,poll=null,balAfterStake=0;
 
 function toast(t){var e=$('toast');e.textContent=t;e.style.display='block';setTimeout(function(){e.style.display='none'},4000)}
